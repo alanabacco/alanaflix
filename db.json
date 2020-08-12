@@ -1,0 +1,92 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Estudos",
+      "cor": "red",
+      "link_extra": {
+        "text": "Alura",
+        "url": "https://www.alura.com.br"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Séries para assistir",
+      "cor": "orange"
+    },
+    {
+      "id": 3,
+      "titulo": "Filmes para assistir",
+      "cor": "yellow"
+    },
+    {
+      "id": 4,
+      "titulo": "Jogos",
+      "cor": "green"
+    },
+    {
+      "id": 5,
+      "titulo": "Músicas",
+      "cor": "blue"
+    },
+    {
+      "id": 6,
+      "titulo": "DREAMCATCHER",
+      "cor": "purple",
+      "link_extra": {
+        "text": "DREAMCATCHER",
+        "url": "https://www.youtube.com/watch?v=W761DtH1oRg&list=PLmNaKWy1cIoH9uG8Gek0JRDS_bJ7NzdZK&index=10"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Imersão React Live #01 - Analisando o front-end do Netflix, do Spotify e do Ifood",
+      "url": "https://www.youtube.com/watch?v=Dcn-tVmSxyU"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Imersão GameDev Live #2",
+      "url": "https://www.youtube.com/watch?v=vmN3lBVhu74"
+    },
+    {
+      "id": 3,
+      "categoriaId": 2,
+      "titulo": "Season 1 Trailer | SHE-RA AND THE PRINCESSES OF POWER",
+      "url": "https://www.youtube.com/watch?v=GsGMkAWB6lY"
+    },
+    {
+      "id": 4,
+      "categoriaId": 3,
+      "titulo": "Um Crime para Dois | Trailer oficial | Netflix Brasil",
+      "url": "https://www.youtube.com/watch?v=msvHbCb1cB4"
+    },
+    {
+      "id": 5,
+      "categoriaId": 4,
+      "titulo": "Em busca da casa automática #1? - Minecraft Aventura",
+      "url": "https://www.youtube.com/watch?v=aWzKb071D9o"
+    },
+    {
+      "id": 6,
+      "categoriaId": 5,
+      "titulo": "Zedd, Alessia Cara - Stay (Lyric Video)",
+      "url": "https://www.youtube.com/watch?v=h--P8HzYZ74"
+    },
+    {
+      "id": 7,
+      "categoriaId": 6,
+      "titulo": "Dreamcatcher 'Scream' MV",
+      "url": "https://www.youtube.com/watch?v=FKlGHHhTOsQ"
+    },
+    {
+      "titulo": "TESTAR PÁGINA DE ERRO - JOGUINHO DA IMERSÃO ALURA",
+      "url": "youtube.com/teste/teste",
+      "categoriaId": 5,
+      "id": 8
+    }
+  ]
+}
