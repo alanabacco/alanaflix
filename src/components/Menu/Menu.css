@@ -71,5 +71,7 @@
       border-radius: 0;
       border: 0;
       text-align: center;
+      color: var(--black);
+      opacity: .9;
     }
   }
