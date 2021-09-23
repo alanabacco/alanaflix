@@ -79,8 +79,8 @@
     {
       "id": 7,
       "categoriaId": 6,
-      "titulo": "Dreamcatcher 'Scream' MV",
-      "url": "https://www.youtube.com/watch?v=FKlGHHhTOsQ"
+      "titulo": "Dreamcatcher(드림캐쳐) 'BEcause' MV",
+      "url": "https://www.youtube.com/watch?v=PEKkdIT8JPM"
     },
     {
       "titulo": "TESTAR PÁGINA DE ERRO - JOGUINHO DA IMERSÃO ALURA",
@@ -91,110 +91,200 @@
     {
       "id": 9,
       "categoriaId": 6,
-      "titulo": "Dreamcatcher(드림캐쳐) 5th Mini Album [Dystopia : Lose Myself] Highlight Medley",
-      "url": "https://www.youtube.com/watch?v=liyoVKZuw18"
+      "titulo": "Dreamcatcher(드림캐쳐) 'Odd Eye' MV",
+      "url": "https://www.youtube.com/watch?v=1QD0FeZyDtQ"
     },
     {
       "id": 10,
       "categoriaId": 6,
-      "titulo": "[Special Clip] Dreamcatcher(드림캐쳐) 'Red Sun'",
-      "url": "https://www.youtube.com/watch?v=RKBJVdjOHUY"
+      "titulo": "Dreamcatcher(드림캐쳐) 'BOCA' MV",
+      "url": "https://www.youtube.com/watch?v=MZ4JGye4dQU"
     },
     {
       "id": 11,
       "categoriaId": 6,
-      "titulo": "Dreamcatcher 'Deja Vu' MV",
-      "url": "https://www.youtube.com/watch?v=W761DtH1oRg"
+      "titulo": "Dreamcatcher (드림캐쳐) - 'Scream' MV",
+      "url": "https://www.youtube.com/watch?v=FKlGHHhTOsQ"
     },
     {
       "id": 12,
       "categoriaId": 6,
-      "titulo": "Dreamcatcher(드림캐쳐) _ GOOD NIGHT MV",
-      "url": "https://www.youtube.com/watch?v=Lxfl8LRab_I"
+      "titulo": "Dreamcatcher (드림캐쳐) 'Deja Vu' MV",
+      "url": "https://www.youtube.com/watch?v=W761DtH1oRg"
     },
     {
       "id": 13,
       "categoriaId": 6,
-      "titulo": "[MV]DREAMCATCHER「Endless Night」",
-      "url": "https://www.youtube.com/watch?v=wCALuFy2YVI"
+      "titulo": "Dreamcatcher (드림캐쳐) 'PIRI' (피리) MV",
+      "url": "https://www.youtube.com/watch?v=Pq_mbTSR-a0"
     },
     {
       "id": 14,
-      "categoriaId": 6,
-      "titulo": "[MV] Dreamcatcher(드림캐쳐)_YOU AND I",
-      "url": "https://www.youtube.com/watch?v=I5_BQAtwHws"
-    },
-    {
-      "id": 15,
       "categoriaId": 6,
       "titulo": "Dreamcatcher(드림캐쳐) 'What' MV",
       "url": "https://www.youtube.com/watch?v=pN0dkjp1deQ"
     },
     {
-      "id": 16,
+      "id": 15,
       "categoriaId": 6,
-      "titulo": "Dreamcatcher(드림캐쳐) _ Chase Me MV",
-      "url": "https://www.youtube.com/watch?v=zihoyz0u_cs"
+      "titulo": "[MV] Dreamcatcher(드림캐쳐)_YOU AND I",
+      "url": "https://www.youtube.com/watch?v=I5_BQAtwHws"
     },
     {
-      "id": 17,
+      "id": 16,
       "categoriaId": 6,
       "titulo": "Dreamcatcher(드림캐쳐) '날아올라 (Fly high)' MV",
       "url": "https://www.youtube.com/watch?v=39yeTdIuKJU"
     },
     {
+      "id": 17,
+      "categoriaId": 6,
+      "titulo": "Dreamcatcher(드림캐쳐) 'GOOD NIGHT' MV",
+      "url": "https://www.youtube.com/watch?v=Lxfl8LRab_I"
+    },
+    {
       "id": 18,
+      "categoriaId": 6,
+      "titulo": "Dreamcatcher(드림캐쳐) _ Chase Me MV",
+      "url": "https://www.youtube.com/watch?v=zihoyz0u_cs"
+    },
+    {
+      "id": 19,
       "categoriaId": 5,
       "titulo": "Lauv - I Like Me Better [Official Audio]",
       "url": "https://www.youtube.com/watch?v=a7fzkqLozwA"
     },
     {
-      "id": 19,
+      "id": 20,
       "categoriaId": 5,
       "titulo": "Clean Bandit - Rather Be ft. Jess Glynne [Official Video]",
       "url": "https://www.youtube.com/watch?v=m-M1AtrxztU"
     },
     {
-      "id": 20,
+      "id": 21,
       "categoriaId": 5,
       "titulo": "Marshmello & Anne-Marie - FRIENDS (Music Video) *OFFICIAL FRIENDZONE ANTHEM*",
       "url": "https://www.youtube.com/watch?v=jzD_yyEcp0M"
     },
     {
-      "id": 21,
+      "id": 22,
       "categoriaId": 5,
       "titulo": "Pabllo Vittar - K.O. (Videoclipe Oficial)",
       "url": "https://www.youtube.com/watch?v=3L5D8by1AtI"
     },
     {
-      "id": 22,
+      "id": 23,
       "categoriaId": 2,
       "titulo": "BROOKLYN NINE-NINE - Official Trailer",
       "url": "https://www.youtube.com/watch?v=sEOuJ4z5aTc"
     },
     {
-      "id": 23,
+      "id": 24,
       "categoriaId": 2,
       "titulo": "One Day at a Time Trailer Oficial Netflix HD",
       "url": "https://www.youtube.com/watch?v=4DF4ad1nWgg"
     },
     {
-      "id": 24,
+      "id": 25,
       "categoriaId": 1,
       "titulo": "Curso de Python 3 - Mundo 1: Fundamentos",
       "url": "http://youtube.com/watch?v=Mp0vhMDI7fA&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6"
     },
     {
-      "id": 25,
+      "id": 26,
       "categoriaId": 1,
       "titulo": "Entenda as diferenças de Git, GitHub e GitLab",
       "url": "https://www.youtube.com/watch?v=_i9DUJcn-mU"
     },
     {
-      "id": 26,
+      "id": 27,
       "categoriaId": 4,
       "titulo": "O COMEÇO - Forever Mapa 3 #01",
       "url": "https://www.youtube.com/watch?v=UIe17yLgAFU"
+    },
+    {
+      "id": 28,
+      "categoriaId": 1,
+      "titulo": "Como organizar um cronograma de estudos de programação com Notion? - Root #19",
+      "url": "https://www.youtube.com/watch?v=DemagUML778"
+    },
+    {
+      "id": 29,
+      "categoriaId": 1,
+      "titulo": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+      "url": "https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLTcmLKdIkOWmeNferJ292VYKBXydGeDej"
+    },
+    {
+      "id": 30,
+      "categoriaId": 5,
+      "titulo": "Johnny Hooker (part. Liniker) - Flutua (CLIPE OFICIAL)",
+      "url": "https://www.youtube.com/watch?v=mYQd7HsvVtI"
+    },
+    {
+      "id": 31,
+      "categoriaId": 3,
+      "titulo": "The Matrix (1999) Official Trailer #1 - Sci-Fi Action Movie",
+      "url": "https://www.youtube.com/watch?v=vKQi3bBA1y8"
+    },
+    {
+      "id": 32,
+      "categoriaId": 3,
+      "titulo": "The Mitchells vs. The Machines | Official Trailer | Netflix",
+      "url": "https://www.youtube.com/watch?v=_ak5dFt8Ar0"
+    },
+    {
+      "id": 33,
+      "categoriaId": 3,
+      "titulo": "FEAR STREET | A Film Trilogy Event | Official Trailer | Netflix",
+      "url": "https://www.youtube.com/watch?v=UyUuzCGblqc"
+    },
+    {
+      "id": 34,
+      "categoriaId": 2,
+      "titulo": "Wynonna Earp | Trailer Exclusivo | Globoplay",
+      "url": "https://www.youtube.com/watch?v=mXJH9PwZKiQ"
+    },
+    {
+      "id": 35,
+      "categoriaId": 2,
+      "titulo": "Atypical | Trailer oficial | Netflix",
+      "url": "https://www.youtube.com/watch?v=mw6EPR6sNS0"
+    },
+    {
+      "id": 36,
+      "categoriaId": 2,
+      "titulo": "3% | Trailer Oficial - Netflix [HD]",
+      "url": "https://www.youtube.com/watch?v=LR5vVv2RDLw"
+    },
+    {
+      "id": 37,
+      "categoriaId": 2,
+      "titulo": "Cidade Invisível | Trailer oficial | Netflix Brasil",
+      "url": "https://www.youtube.com/watch?v=GodwQKNXIYk"
+    },
+    {
+      "id": 38,
+      "categoriaId": 3,
+      "titulo": "A Quiet Place (2018) - Official Trailer - Paramount Pictures",
+      "url": "https://www.youtube.com/watch?v=WR7cc5t7tv8"
+    },
+    {
+      "id": 39,
+      "categoriaId": 4,
+      "titulo": "Minecraft Betweenlands #1: COMECEI A SÉRIE TENDO UMA IDEIA GENIAL!",
+      "url": "https://www.youtube.com/watch?v=FADU_JA6Mws&list=PLtZBoAYwtOdbXSMl--qcTTSeHFe88o72-"
+    },
+    {
+      "id": 40,
+      "categoriaId": 4,
+      "titulo": "CONHEÇAM O MEU NOVO EMPREGO! HOUSE FLIPPER #1",
+      "url": "https://www.youtube.com/watch?v=uG8wXLxlTFo&list=PL7oQLgVWZD-2gBf9heKxEvwGb8t7BzbGb"
+    },
+    {
+      "id": 41,
+      "categoriaId": 4,
+      "titulo": "LARGUEI TUDO E FUI PRA FAZENDA - Stardew Valley",
+      "url": "https://www.youtube.com/watch?v=Yc2L9s7B9Qg&list=PL7oQLgVWZD-1NYloUdCWUB-mo1qJt9kU6&index=1"
     }
   ]
 }
