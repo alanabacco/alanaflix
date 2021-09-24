@@ -9,9 +9,17 @@
 
 O projeto AlanaFlix foi desenvolvido durante a Imersão React da Alura em 2020, que contou com 5 aulas práticas para criar e colocar no ar uma aplicação React.
 
-[Acessar AlanaFlix](https://alanaflix.alanabacco.vercel.app/)
+<div align="center">
+    <img src="./src/assets/imagens/AlanaFlix.gif" alt="Gif da tela do AlanaFlix" width="100%"/>
+</div>
 
----
+🌐 [Acessar AlanaFlix](https://alanaflix.alanabacco.vercel.app/)
+
+## Funcionalidades
+
+- Tela inicial com os vídeos;
+- Adicionar novo vídeo;
+- Adicionar nova categoria.
 
 ## 🛠 Tecnologias
 
@@ -19,6 +27,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 -   [React](https://pt-br.reactjs.org/)
 -   [Styled Components](https://styled-components.com/)
+-   [Heroku](https://www.heroku.com/)
 
 ---
 
