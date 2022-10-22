@@ -7,7 +7,7 @@
 
 ## 💻 Sobre o projeto
 
-O projeto AlanaFlix foi desenvolvido durante a Imersão React da Alura em 2020, que contou com 5 aulas práticas para criar e colocar no ar uma aplicação React.
+O projeto AlanaFlix foi desenvolvido durante a primeira Imersão React da Alura em 2020, que contou com 5 aulas práticas para criar e colocar no ar uma aplicação React.
 
 <div align="center">
     <img src="./src/assets/imagens/AlanaFlix.gif" alt="Gif da tela do AlanaFlix" width="100%"/>
@@ -25,9 +25,23 @@ O projeto AlanaFlix foi desenvolvido durante a Imersão React da Alura em 2020, 
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
--   [React](https://pt-br.reactjs.org/)
--   [Styled Components](https://styled-components.com/)
--   [Heroku](https://www.heroku.com/)
+- [React](https://pt-br.reactjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Heroku](https://www.heroku.com/)
+- [VS Code](https://code.visualstudio.com/)
+
+---
+
+## 🔥 Como executar o projeto localmente
+
+Para executar o projeto de maneira local, execute os comandos:
+
+```bash
+git clone https://github.com/alanabacco/alanaflix
+cd alanaflix
+npm install
+npm run dev
+```
 
 ---
 
