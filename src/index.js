@@ -1,22 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import CadastroVideo from './pages/cadastro/Video';
-import CadastroCategoria from './pages/cadastro/Categoria';
-import Pagina404 from './pages/Pagina404'; // Desafio master blaster
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import CadastroVideo from "./pages/cadastro/Video";
+import CadastroCategoria from "./pages/cadastro/Categoria";
+import Pagina404 from "./pages/Pagina404"; // Desafio master blaster
 
 ReactDOM.render(
   <BrowserRouter>
-    <Switch>
-      <Route path="/" component={Home} exact />
-      <Route path="/cadastro/video" component={CadastroVideo} />
-      <Route path="/cadastro/categoria" component={CadastroCategoria} />
-      <Route component={Pagina404} />
-    </Switch>
+    <Routes>
+      <Route path="/" element={<Home />} exact />
+      <Route path="/cadastro/video" element={<CadastroVideo />} />
+      <Route path="/cadastro/categoria" element={<CadastroCategoria />} />
+      <Route element={<Pagina404 />} />
+    </Routes>
   </BrowserRouter>,
 
-  document.getElementById('root'),
+  document.getElementById("root")
 );
