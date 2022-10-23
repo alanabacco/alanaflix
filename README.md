@@ -59,4 +59,7 @@ Desenvolvido por [Alana Bacco](https://github.com/alanabacco). <br />
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.5",
-    "eslint-plugin-react-hooks": "^4.0.8" -->
+    "eslint-plugin-react-hooks": "^4.0.8"
+
+    dependencies que foram tiradas:
+    , -->
