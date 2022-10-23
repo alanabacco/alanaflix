@@ -47,3 +47,16 @@ npm run dev
 
 Desenvolvido por [Alana Bacco](https://github.com/alanabacco). <br />
 [![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/alana-bacco/)](https://www.linkedin.com/in/alana-bacco/)
+
+
+
+
+
+
+<!-- devDependencies que foram tiradas:
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8" -->
