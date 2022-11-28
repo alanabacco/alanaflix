@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Redirect } from 'react-router';
-import SlickSlider from 'react-slick';
+import SlickSlider from 'react-slick'; // lib do Carrossel
 import styled from 'styled-components';
 
 const Container = styled.ul`
