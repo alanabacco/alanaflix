@@ -57,3 +57,8 @@ Desenvolvido por [Alana Bacco](https://github.com/alanabacco). <br />
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8"
 -->
+
+
+
+<!-- Para trocar os dados no firebase é só importar um arquivo json 
+com os novos dados no próprio realtime database do firebase (aqui no projeto, arquivo db.json) -->
