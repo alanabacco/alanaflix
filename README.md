@@ -29,9 +29,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [React](https://pt-br.reactjs.org/)
 - [Styled Components](https://styled-components.com/)
-<!-- - [Heroku](https://www.heroku.com/) -->
 - [Firebase](https://firebase.google.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+<!-- - [Heroku](https://www.heroku.com/) -->
 
 ## 🔥 Como executar o projeto localmente
 

@@ -1,6 +1,8 @@
 import config from "../config";
 
-const URL_VIDEOS = `${config.URL_BACKEND}/videos.json`;
+const URL_VIDEOS = window.location.hostname.includes("localhost")
+  ? `${config.URL_BACKEND}/videos`
+  : `${config.URL_BACKEND}/videos.json`;
 
 function create(objetoDoVideo) {
   return fetch(`${URL_VIDEOS}`, {
@@ -20,15 +22,14 @@ function create(objetoDoVideo) {
 }
 
 function getAll() {
-  return fetch(`${URL_VIDEOS}`)
-    .then(async (respostaDoServidor) => {
-      if (respostaDoServidor.ok) {
-        const resposta = await respostaDoServidor.json();
-        return resposta;
-      }
+  return fetch(`${URL_VIDEOS}`).then(async (respostaDoServidor) => {
+    if (respostaDoServidor.ok) {
+      const resposta = await respostaDoServidor.json();
+      return resposta;
+    }
 
-      throw new Error('Não foi possível pegar os dados.');
-    });
+    throw new Error("Não foi possível pegar os dados.");
+  });
 }
 
 export default {
