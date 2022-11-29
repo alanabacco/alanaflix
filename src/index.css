@@ -1,17 +1,13 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-  --primary: #E9FF58;
-  --black: #000000;
-  --blackLighter: #9E9E9E;
-  --grayLight: #F5F5F5;
-  --grayMedium: #e5e5e5; 
-  --white: #FFFFFF;
-  --frontEnd: #6BD1FF;
-  --backEnd: #00C86F;
+  --primary: #e9ff58;
+  --black: #030303;
+  --white: #fdfdfd;
+  --rainbow: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
 }
 
 html,

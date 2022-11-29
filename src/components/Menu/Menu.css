@@ -24,7 +24,9 @@
     padding-right: 5%;
   
     background: var(--black);
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 2px solid transparent;
+    border-image: var(--rainbow);
+    border-image-slice: 1;
   }
   body {
     --bodyPaddingTop: 94px;
