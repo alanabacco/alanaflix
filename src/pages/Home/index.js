@@ -1,42 +1,45 @@
-import React, { useLayoutEffect, useState } from 'react';
-// import dadosIniciais from '../../data/dados_iniciais.json';
-import BannerMain from '../../components/BannerMain';
-import Carousel from '../../components/Carousel';
-import PageDefault from '../../components/PageDefault';
-import categoriasRepository from '../../repositories/categorias';
+import React, { useEffect, useState } from "react";
+import BannerMain from "../../components/BannerMain";
+import Carousel from "../../components/Carousel";
+import PageDefault from "../../components/PageDefault";
+import videosRepository from "../../repositories/videos";
+import categoriasRepository from "../../repositories/categorias";
 
 function Home() {
-  const [dadosIniciais, setDadosIniciais] = useState([]);
+  const [videos, setVideos] = useState([]);
+  const [categorias, setCategorias] = useState([]);
 
-  useLayoutEffect(() => {
-    // http://localhost:8080/categorias?_embed=videos
-    categoriasRepository.getAllWithVideos()
-      .then((categoriasComVideos) => {
-        console.log(categoriasComVideos);
-        console.log(categoriasComVideos[0].videos[0]);
-        setDadosIniciais(categoriasComVideos);
-      });
-    // .catch((err) => {
-    //  console.log(err.message);
-    // });
+  useEffect(() => {
+    videosRepository.getAll().then((videos) => {
+      // console.log("videos:", videos);
+      setVideos(videos);
+    });
+
+    categoriasRepository.getAll().then((categorias) => {
+      // console.log("categorias:", categorias);
+      setCategorias(categorias);
+    });
   }, []);
 
   return (
     <PageDefault paddingAll={0}>
-      {dadosIniciais.length === 0 && (<div>Carregando...</div>)}
+      {categorias.length === 0 && <div>Carregando...</div>}
 
-      {dadosIniciais.map((categoria, indice) => {
+      {categorias.map((categoria, indice) => {
         if (indice === 0) {
+          const firstCategory = 1;
+          const bannerVideo = videos?.filter(
+            (video) => video.categoriaId === firstCategory
+          )[indice];
           return (
             <div key={categoria.id}>
-              <BannerMain
-                videoTitle={dadosIniciais[0].videos[0].titulo}
-                url={dadosIniciais[0].videos[0].url}
-                videoDescription={dadosIniciais[0].videos[0].description}
-              />
+              <BannerMain videoTitle={bannerVideo?.titulo} url={bannerVideo?.url} />
               <Carousel
                 ignoreFirstVideo
-                category={dadosIniciais[0]}
+                category={categorias[indice]}
+                categoryVideos={videos.filter(
+                  (video) => video.categoriaId === firstCategory
+                )}
               />
             </div>
           );
@@ -44,8 +47,9 @@ function Home() {
 
         return (
           <Carousel
-            key={categoria.id}
-            category={categoria}
+            key={categorias[indice].id}
+            category={categorias[indice]}
+            categoryVideos={videos.filter((video) => video.categoriaId === indice + 1)}
           />
         );
       })}
@@ -54,45 +58,3 @@ function Home() {
 }
 
 export default Home;
-
-
-// (6) [{…}, {…}, {…}, {…}, {…}, {…}]
-// 0
-// : 
-// {cor: 'red', id: 1, link_extra: {…}, titulo: 'Estudos'}
-// 1
-// : 
-// {cor: 'orange', id: 2, titulo: 'Séries para assistir'}
-// 2
-// : 
-// {cor: 'yellow', id: 3, titulo: 'Filmes para assistir'}
-// 3
-// : 
-// {cor: 'green', id: 4, titulo: 'Jogos'}
-// 4
-// : 
-// {cor: 'blue', id: 5, titulo: 'Músicas'}
-// 5
-// : 
-// {cor: 'purple', id: 6, link_extra: {…}, titulo: 'DREAMCATCHER'}
-
-
-//---------------
-
-
-// (5) [{…}, {…}, {…}, {…}, {…}]
-// 0
-// : 
-// {titulo: 'Front End', link: 'https://www.alura.com.br/formacao-front-end', cor: '#6BD1FF', link_extra: {…}, videos: Array(7)}
-// 1
-// : 
-// {titulo: 'Back End', cor: '#00C86F', link_extra: {…}, videos: Array(5)}
-// 2
-// : 
-// {titulo: 'Data Science e Inteligência Artificial', cor: '#9cd33b', link_extra: {…}, videos: Array(4)}
-// 3
-// : 
-// {titulo: 'Filmes', cor: 'orange', videos: Array(4)}
-// 4
-// : 
-// {titulo: 'Games', cor: 'red', link_extra: {…}, videos: Array(4)}
