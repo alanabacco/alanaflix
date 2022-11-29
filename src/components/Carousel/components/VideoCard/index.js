@@ -3,7 +3,7 @@ import { VideoCardContainer } from './styles';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
-    .replace(
+    ?.replace(
       /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/,
       '$7',
     );
@@ -16,7 +16,7 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
       url={image}
       href={videoURL}
       target="_blank"
-      style={{ borderColor: categoryColor || 'red' }}
+      style={{ borderColor: categoryColor || "red" }}
       title={videoTitle}
     />
   );

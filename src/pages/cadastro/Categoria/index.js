@@ -4,6 +4,7 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import { URL_CATEGORIES } from '../../../repositories/categorias';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -17,10 +18,7 @@ function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    const URL_TOP = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
-      : 'https://alanaflix.herokuapp.com/categorias';
-    fetch(URL_TOP)
+    fetch(URL_CATEGORIES)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
         setCategorias([

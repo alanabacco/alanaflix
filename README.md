@@ -9,6 +9,8 @@
 
 O projeto AlanaFlix foi desenvolvido durante a primeira Imersão React da Alura em 2020, que contou com 5 aulas práticas para criar e colocar no ar uma aplicação React.
 
+Atualização 2022: a base de dados da aplicação foi mudada do [Heroku](https://www.heroku.com/) para o [Firebase](https://firebase.google.com/).
+
 <div align="center">
     <img src="./src/assets/imagens/AlanaFlix.gif" alt="Gif da tela do AlanaFlix" width="100%"/>
 </div>
@@ -18,8 +20,8 @@ O projeto AlanaFlix foi desenvolvido durante a primeira Imersão React da Alura 
 ## Funcionalidades
 
 - Tela inicial com os vídeos;
-- Adicionar novo vídeo;
-- Adicionar nova categoria.
+<!-- - Adicionar novo vídeo;
+- Adicionar nova categoria. -->
 
 ## 🛠 Tecnologias
 
@@ -27,8 +29,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [React](https://pt-br.reactjs.org/)
 - [Styled Components](https://styled-components.com/)
-- [Heroku](https://www.heroku.com/)
-- [VS Code](https://code.visualstudio.com/)
+- [Firebase](https://firebase.google.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+<!-- - [Heroku](https://www.heroku.com/) -->
 
 ## 🔥 Como executar o projeto localmente
 
@@ -53,6 +56,4 @@ Desenvolvido por [Alana Bacco](https://github.com/alanabacco). <br />
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8"
-
-    dependencies que foram tiradas:
-    , -->
+-->
