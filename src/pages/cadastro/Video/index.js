@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import PageDefault from "../../../components/PageDefault";
 import useForm from "../../../hooks/useForm";
-import FormField from "../../../components/FormField";
+import FormField, { FormFooter } from "../../../components/FormField";
 import Button from "../../../components/Button";
 import videosRepository from "../../../repositories/videos";
 import categoriasRepository from "../../../repositories/categorias";
@@ -21,6 +21,8 @@ function CadastroVideo() {
       setCategorias(categoriasFromServer);
     });
   }, []);
+
+  const navigate = useNavigate();
 
   return (
     <PageDefault>
@@ -41,8 +43,8 @@ function CadastroVideo() {
               categoriaId: categoriaEscolhida.id,
             })
             .then(() => {
-              // console.log('Cadastrou com sucesso!');
-              useNavigate("/");
+              // console.log("Video Cadastrado com sucesso");
+              navigate("/");
             });
         }}
       >
@@ -51,9 +53,16 @@ function CadastroVideo() {
           name="titulo"
           value={values.titulo}
           onChange={handleChange}
+          required
         />
 
-        <FormField label="URL" name="url" value={values.url} onChange={handleChange} />
+        <FormField
+          label="URL"
+          name="url"
+          value={values.url}
+          onChange={handleChange}
+          required
+        />
 
         <FormField
           label="Categoria"
@@ -61,15 +70,14 @@ function CadastroVideo() {
           value={values.categoria}
           onChange={handleChange}
           suggestions={categoryTitles}
+          required
         />
 
-        <Button type="submit">Cadastrar</Button>
+        <FormFooter>
+          <Button type="submit">Cadastrar</Button>
+          <Link to="/cadastro/categoria">Cadastrar Categoria</Link>
+        </FormFooter>
       </form>
-
-      <br />
-      <br />
-
-      <Link to="/cadastro/categoria">Cadastrar Categoria</Link>
     </PageDefault>
   );
 }

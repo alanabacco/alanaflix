@@ -20,8 +20,8 @@ Atualização 2022: a base de dados da aplicação foi mudada do [Heroku](https:
 ## Funcionalidades
 
 - Tela inicial com os vídeos;
-<!-- - Adicionar novo vídeo;
-- Adicionar nova categoria. -->
+- Adicionar novo vídeo;
+- Adicionar nova categoria.
 
 ## 🛠 Tecnologias
 
