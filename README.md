@@ -51,6 +51,18 @@ Desenvolvido por [Alana Bacco](https://github.com/alanabacco). <br />
 
 
 <!-- 
+TODO:
+[ ] Separar Styled Components
+[ ] Passar para TypeScript
+[ ] Colocar ícone de loading
+[ ] Colocar títulos dos vídeos embaixo deles
+[ ] Checar responsividade
+[ ] Criar testes
+[ ] Fazer Backend em NodeJS
+[ ] Completar o que falta do CRUD
+[ ] Ter diferentes usuários
+
+
 Notas: 
 - Para trocar os dados no firebase é só importar um arquivo json 
 com os novos dados no próprio realtime database do firebase (aqui no projeto, arquivo db.json) 
