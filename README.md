@@ -56,7 +56,7 @@ TODO:
 [ ] Passar para TypeScript
 [X] Colocar ícone de loading
 [ ] Colocar títulos dos vídeos embaixo deles
-[ ] Checar responsividade
+[X] Checar responsividade
 [ ] Criar testes
 [ ] Fazer Backend em NodeJS
 [ ] Completar o que falta do CRUD
