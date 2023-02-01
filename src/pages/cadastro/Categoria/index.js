@@ -1,21 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageDefault from "../../../components/PageDefault";
-import FormField, { FormFooter } from "../../../components/FormField";
+import { FormFooter } from "../../../components/FormField/styles";
+import FormField from "../../../components/FormField";
 import Button from "../../../components/Button";
 import useForm from "../../../hooks/useForm";
 import { URL_CATEGORIES } from "../../../repositories/categorias";
-import styled from "styled-components";
 import categoriasRepository from "../../../repositories/categorias";
-
-const Categories = styled.div`
-  line-height: 1.7em;
-  text-align: center;
-
-  ul {
-    list-style-type: none;
-  }
-`;
+import { Categories } from "./styles";
 
 function CadastroCategoria() {
   const valoresIniciais = {
