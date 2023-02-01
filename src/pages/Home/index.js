@@ -4,6 +4,7 @@ import Carousel from "../../components/Carousel";
 import PageDefault from "../../components/PageDefault";
 import videosRepository from "../../repositories/videos";
 import categoriasRepository from "../../repositories/categorias";
+import { Loader } from "../../components/Loader";
 
 function Home() {
   const [videos, setVideos] = useState([]);
@@ -23,7 +24,7 @@ function Home() {
 
   return (
     <PageDefault paddingAll={0}>
-      {categorias.length === 0 && <div>Carregando...</div>}
+      {categorias.length === 0 && <Loader />}
 
       {categorias.map((categoria, indice) => {
         if (indice === 0) {

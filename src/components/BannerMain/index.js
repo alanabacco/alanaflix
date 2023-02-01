@@ -1,13 +1,12 @@
-import React from 'react';
-import VideoIframeResponsive from './components/VideoIframeResponsive';
-import { BannerMainContainer, ContentAreaContainer, WatchButton } from './styles';
+import React from "react";
+import VideoIframeResponsive from "./components/VideoIframeResponsive";
+import { BannerMainContainer, ContentAreaContainer, WatchLink } from "./styles";
 
 function getYouTubeId(youtubeURL) {
-  return youtubeURL
-    ?.replace(
-      /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/,
-      '$7',
-    );
+  return youtubeURL?.replace(
+    /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/,
+    "$7"
+  );
 }
 
 export default function BannerMain({ videoTitle, videoDescription, url }) {
@@ -27,7 +26,9 @@ export default function BannerMain({ videoTitle, videoDescription, url }) {
 
         <ContentAreaContainer.Item>
           <VideoIframeResponsive youtubeID={youTubeID} />
-          <WatchButton>Assistir</WatchButton>
+          <WatchLink href={url} target="_blank">
+            Assistir
+          </WatchLink>
         </ContentAreaContainer.Item>
       </ContentAreaContainer>
     </BannerMainContainer>

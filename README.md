@@ -52,11 +52,11 @@ Desenvolvido por [Alana Bacco](https://github.com/alanabacco). <br />
 
 <!-- 
 TODO:
-[ ] Separar Styled Components
+[x] Separar Styled Components
 [ ] Passar para TypeScript
-[ ] Colocar ícone de loading
+[X] Colocar ícone de loading
 [ ] Colocar títulos dos vídeos embaixo deles
-[ ] Checar responsividade
+[X] Checar responsividade
 [ ] Criar testes
 [ ] Fazer Backend em NodeJS
 [ ] Completar o que falta do CRUD
