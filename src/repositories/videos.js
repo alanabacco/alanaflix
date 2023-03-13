@@ -1,9 +1,5 @@
 import config from "../config";
 
-// const URL_VIDEOS = window.location.hostname.includes("localhost")
-//   ? `${config.URL_BACKEND}/videos`
-//   : `${config.URL_BACKEND}/videos.json`;
-
 const URL_VIDEOS = `${config.URL_BACKEND}/videos`;
 
 function create(objetoDoVideo) {

@@ -1,9 +1,5 @@
 import config from "../config";
 
-// export const URL_CATEGORIES = window.location.hostname.includes("localhost")
-//   ? `${config.URL_BACKEND}/categorias`
-//   : `${config.URL_BACKEND}/categorias.json`;
-
 export const URL_CATEGORIES = `${config.URL_BACKEND}/categorias`;
 
 function create(objetoDaCategoria) {

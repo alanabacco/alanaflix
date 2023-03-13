@@ -41,23 +41,19 @@ function Home() {
                   (video) => video.categoriaId === categorias[indice].id
                 )}
               />
-              {console.log(
-                videos.filter((video) => video.categoriaId === categorias[indice].id)
-              )}
             </div>
           );
         }
 
         return (
-          <>
+          <div key={categorias[indice].id}>
             <Carousel
-              key={categorias[indice].id}
               category={categorias[indice]}
               categoryVideos={videos.filter(
                 (video) => video.categoriaId === categorias[indice].id
               )}
             />
-          </>
+          </div>
         );
       })}
     </PageDefault>
