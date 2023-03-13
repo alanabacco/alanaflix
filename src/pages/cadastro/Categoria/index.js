@@ -4,7 +4,7 @@ import PageDefault from "../../../components/PageDefault";
 import { FormFooter } from "../../../components/FormField/styles";
 import FormField from "../../../components/FormField";
 import Button from "../../../components/Button";
-import Loader from "../../../components/Loader";
+import { Loader } from "../../../components/Loader";
 import useForm from "../../../hooks/useForm";
 import { URL_CATEGORIES } from "../../../repositories/categorias";
 import categoriasRepository from "../../../repositories/categorias";
