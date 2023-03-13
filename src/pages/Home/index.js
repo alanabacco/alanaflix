@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import BannerMain from "../../components/BannerMain";
 import Carousel from "../../components/Carousel";
 import PageDefault from "../../components/PageDefault";
@@ -28,9 +28,8 @@ function Home() {
 
       {categorias.map((categoria, indice) => {
         if (indice === 0) {
-          const firstCategory = 1;
           const bannerVideo = videos?.filter(
-            (video) => video.categoriaId === firstCategory
+            (video) => video.categoriaId === categorias[indice].id
           )[indice];
           return (
             <div key={categoria.id}>
@@ -39,19 +38,26 @@ function Home() {
                 ignoreFirstVideo
                 category={categorias[indice]}
                 categoryVideos={videos.filter(
-                  (video) => video.categoriaId === firstCategory
+                  (video) => video.categoriaId === categorias[indice].id
                 )}
               />
+              {console.log(
+                videos.filter((video) => video.categoriaId === categorias[indice].id)
+              )}
             </div>
           );
         }
 
         return (
-          <Carousel
-            key={categorias[indice].id}
-            category={categorias[indice]}
-            categoryVideos={videos.filter((video) => video.categoriaId === indice + 1)}
-          />
+          <>
+            <Carousel
+              key={categorias[indice].id}
+              category={categorias[indice]}
+              categoryVideos={videos.filter(
+                (video) => video.categoriaId === categorias[indice].id
+              )}
+            />
+          </>
         );
       })}
     </PageDefault>
