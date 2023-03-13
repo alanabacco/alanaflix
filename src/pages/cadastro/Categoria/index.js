@@ -4,6 +4,7 @@ import PageDefault from "../../../components/PageDefault";
 import { FormFooter } from "../../../components/FormField/styles";
 import FormField from "../../../components/FormField";
 import Button from "../../../components/Button";
+import Loader from "../../../components/Loader";
 import useForm from "../../../hooks/useForm";
 import { URL_CATEGORIES } from "../../../repositories/categorias";
 import categoriasRepository from "../../../repositories/categorias";
@@ -78,7 +79,7 @@ function CadastroCategoria() {
         </FormFooter>
       </form>
 
-      {categorias.length === 0 && <div>Carregando...</div>}
+      {categorias.length === 0 && <Loader />}
 
       <Categories>
         <h2>Categorias Cadastradas</h2>
