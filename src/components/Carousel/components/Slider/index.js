@@ -1,5 +1,3 @@
-import React from "react";
-// import { Redirect } from 'react-router';
 import SlickSlider from "react-slick"; // lib do Carrossel
 import { Container } from "./styles";
 

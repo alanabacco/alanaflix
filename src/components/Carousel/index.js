@@ -1,8 +1,7 @@
-import React from "react";
 import { VideoCardGroupContainer, Title, ExtraLink } from "./styles";
+import { SliderItem } from "./components/Slider/styles";
 import VideoCard from "./components/VideoCard";
 import Slider from "./components/Slider";
-import { SliderItem } from "./components/Slider/styles";
 
 function Carousel({ ignoreFirstVideo, category, categoryVideos }) {
   const categoryTitle = category?.titulo;
