@@ -14,7 +14,8 @@ O projeto AlanaFlix foi desenvolvido durante a primeira [Imersão React](https:/
 
 - Tela inicial com os vídeos;
 - Adicionar novo vídeo;
-- Adicionar nova categoria.
+- Adicionar nova categoria;
+  - Escolher cor da nova categoria.
 
 ## 🛠 Tecnologias
 
@@ -40,15 +41,11 @@ O navegador irá abrir em 'https://localhost:3000'.
 
 ## 🚧 Melhorias a serem feitas:
 
-[X] Separar Styled Components <br />
-[X] Colocar ícone de loading <br />
-[X] Checar responsividade <br />
-[ ] Passar para TypeScript <br />
-[ ] Colocar títulos dos vídeos embaixo deles <br />
-[ ] Criar testes <br />
-[ ] Fazer Backend em NodeJS <br />
-[ ] Completar o que falta do CRUD <br />
-[ ] Ter diferentes usuários
+- [ ] Colocar títulos dos vídeos embaixo deles
+- [ ] Criar testes
+- [ ] Fazer Backend em NodeJS / ou firebase
+- [ ] Completar o que falta do CRUD
+- [ ] Ter diferentes usuários
 
 ---
 

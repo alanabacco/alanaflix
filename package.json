@@ -1,6 +1,16 @@
 {
   "name": "alanaflix",
   "version": "0.2.0",
+  "description": "Repositório de vídeos do youtube separados por categoria.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanabacco/alanaflix"
+  },
+  "homepage": "https://alanaflix.vercel.app/",
+  "keywords": [
+    "React",
+    "AluraFlix"
+  ],
   "private": true,
   "scripts": {
     "server": "node ./server.js",
@@ -14,17 +24,17 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
-    "json-server": "^0.17.1",
+    "json-server": "^0.17.3",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.9.0",
+    "react-router-dom": "^6.15.0",
     "react-scripts": "^5.0.1",
     "react-slick": "^0.29.0",
-    "styled-components": "^5.3.9"
+    "styled-components": "^6.0.7"
   },
   "devDependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^8.2.0"
   },
   "browserslist": {
     "production": [
