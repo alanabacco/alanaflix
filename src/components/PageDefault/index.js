@@ -6,7 +6,7 @@ function PageDefault({ children, paddingAll }) {
   return (
     <>
       <Menu />
-      <Main paddingAll={paddingAll}>{children}</Main>
+      <Main $paddingAll={paddingAll}>{children}</Main>
       <Footer />
     </>
   );

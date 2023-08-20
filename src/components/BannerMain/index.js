@@ -13,7 +13,7 @@ export default function BannerMain({ videoTitle, videoDescription, url }) {
   const bgUrl = `https://img.youtube.com/vi/${youTubeID}/maxresdefault.jpg`;
 
   return (
-    <BannerMainContainer backgroundImage={bgUrl}>
+    <BannerMainContainer $backgroundImage={bgUrl}>
       <ContentAreaContainer>
         <ContentAreaContainer.Item>
           <ContentAreaContainer.Title>{videoTitle}</ContentAreaContainer.Title>
