@@ -34,18 +34,16 @@ Para executar o projeto de maneira local, execute os comandos:
 git clone https://github.com/alanabacco/alanaflix
 cd alanaflix
 npm install
-npm run dev
+npm run start
 ```
 
 O navegador irá abrir em 'https://localhost:3000'.
 
 ## 🚧 Melhorias a serem feitas:
 
+- [x] Integrar Firebase
+- [ ] Criar autenticação no firebase pra que apenas eu consiga add videos
 - [ ] Colocar títulos dos vídeos embaixo deles
-- [ ] Criar testes
-- [ ] Fazer Backend em NodeJS / ou firebase
-- [ ] Completar o que falta do CRUD
-- [ ] Ter diferentes usuários
 
 ---
 

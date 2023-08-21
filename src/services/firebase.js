@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, child, get } from "firebase/database";
+import "firebase/auth";
 
 export const firebaseConfig = {
   apiKey: process.env.API_KEY,
@@ -13,30 +13,4 @@ export const firebaseConfig = {
 
 initializeApp(firebaseConfig);
 
-const dbRef = ref(getDatabase());
-
-const categoriasRepository = get(child(dbRef, "categorias"))
-  .then((snapshot) => {
-    if (snapshot.exists()) {
-      console.log(snapshot.val());
-    } else {
-      console.log("No data available");
-    }
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
-const videosRepository = get(child(dbRef, "videos"))
-  .then((snapshot) => {
-    if (snapshot.exists()) {
-      console.log(snapshot.val());
-    } else {
-      console.log("No data available");
-    }
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
-export { categoriasRepository, videosRepository };
+export const auth = firebase.auth();

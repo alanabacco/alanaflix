@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import PageDefault from "../../../components/PageDefault";
 import { FormFooter } from "../../../components/FormField/styles";
 import FormField from "../../../components/FormField";
@@ -13,7 +13,6 @@ import { Categories } from "./styles";
 function CadastroCategoria() {
   const valoresIniciais = {
     titulo: "",
-    descricao: "",
     cor: "",
   };
 
@@ -24,9 +23,12 @@ function CadastroCategoria() {
   useEffect(() => {
     fetch(URL_CATEGORIES).then(async (respostaDoServidor) => {
       const resposta = await respostaDoServidor.json();
-      setCategorias([...resposta]);
+      setCategorias([...Object.entries(resposta).map((categoria) => categoria[1])]);
+      console.log(categorias);
     });
   }, []);
+
+  const navigate = useNavigate();
 
   return (
     <PageDefault>
@@ -42,11 +44,11 @@ function CadastroCategoria() {
           categoriasRepository
             .create({
               titulo: values.titulo,
-              descricao: values.descricao,
               cor: values.cor,
             })
             .then(() => {
               // console.log("Categoria cadastrada com sucesso");
+              navigate("/cadastro/video");
             });
         }}
       >
@@ -56,14 +58,6 @@ function CadastroCategoria() {
           value={values.titulo}
           onChange={handleChange}
           required
-        />
-
-        <FormField
-          label="Descrição"
-          type="textarea"
-          name="descricao"
-          value={values.descricao}
-          onChange={handleChange}
         />
 
         <FormField
