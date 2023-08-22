@@ -10,7 +10,8 @@ import categoriasRepository from "../../../repositories/categorias";
 
 function CadastroVideo() {
   const [categorias, setCategorias] = useState([]);
-  const categoryTitles = categorias.map(({ titulo }) => titulo);
+  const [categoryTitles, setCategoryTitles] = useState([]);
+
   const { handleChange, values } = useForm({
     titulo: "",
     url: "",
@@ -19,7 +20,12 @@ function CadastroVideo() {
 
   useEffect(() => {
     categoriasRepository.getAll().then((categoriasFromServer) => {
-      setCategorias(categoriasFromServer);
+      setCategorias(
+        Object.entries(categoriasFromServer).map((categoria) => categoria[1])
+      );
+      setCategoryTitles(
+        Object.entries(categoriasFromServer).map((categoria) => categoria[1]?.titulo)
+      );
     });
   }, []);
 
@@ -41,7 +47,7 @@ function CadastroVideo() {
             .create({
               titulo: values.titulo,
               url: values.url,
-              categoriaId: categoriaEscolhida.id,
+              categoriaTitulo: categoriaEscolhida.titulo,
             })
             .then(() => {
               // console.log("Video Cadastrado com sucesso");

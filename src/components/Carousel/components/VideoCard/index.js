@@ -11,7 +11,7 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
   const image = `https://img.youtube.com/vi/${getYouTubeId(videoURL)}/hqdefault.jpg`;
   return (
     <VideoCardContainer
-      url={image}
+      $url={image}
       href={videoURL}
       target="_blank"
       style={{ borderColor: categoryColor || "red" }}

@@ -26,6 +26,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [json-server](https://www.npmjs.com/package/json-server)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
+- [Firebase](https://firebase.google.com/) - base de dados
+
 ## 🔥 Como executar o projeto localmente
 
 Para executar o projeto de maneira local, execute os comandos:
@@ -34,18 +36,10 @@ Para executar o projeto de maneira local, execute os comandos:
 git clone https://github.com/alanabacco/alanaflix
 cd alanaflix
 npm install
-npm run dev
+npm run start
 ```
 
 O navegador irá abrir em 'https://localhost:3000'.
-
-## 🚧 Melhorias a serem feitas:
-
-- [ ] Colocar títulos dos vídeos embaixo deles
-- [ ] Criar testes
-- [ ] Fazer Backend em NodeJS / ou firebase
-- [ ] Completar o que falta do CRUD
-- [ ] Ter diferentes usuários
 
 ---
 

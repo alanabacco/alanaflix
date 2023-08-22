@@ -9,48 +9,61 @@ import { Loader } from "../../components/Loader";
 function Home() {
   const [videos, setVideos] = useState([]);
   const [categorias, setCategorias] = useState([]);
+  const [firstCategoriaRef, setFirstCategoriaRef] = useState("");
 
   useEffect(() => {
     videosRepository.getAll().then((videos) => {
-      // console.log("videos:", videos);
       setVideos(videos);
     });
 
     categoriasRepository.getAll().then((categorias) => {
-      // console.log("categorias:", categorias);
       setCategorias(categorias);
+      setFirstCategoriaRef(Object.entries(categorias)[0]?.[0]);
     });
   }, []);
+
+  function videosPorCategoria(videosArr, categoriaRef, categor) {
+    const videos = videosArr.filter(
+      (video) => video[1]?.categoriaTitulo === categor[categoriaRef]?.titulo
+    );
+    const arrayVideos = videos.map((video) => video[1]);
+    return arrayVideos;
+  }
 
   return (
     <PageDefault paddingAll={0}>
       {categorias.length === 0 && <Loader />}
 
-      {categorias.map((categoria, indice) => {
-        if (indice === 0) {
-          const bannerVideo = videos?.filter(
-            (video) => video.categoriaId === categorias[indice].id
-          )[indice];
+      {Object.entries(categorias).map((categoria, indice) => {
+        const categoriaRef = categoria[0];
+        if (categoriaRef === firstCategoriaRef) {
+          const videosPrimeiraCategoria = videosPorCategoria(
+            Object.entries(videos),
+            categoriaRef,
+            categorias
+          );
+          const bannerVideo = videosPrimeiraCategoria[0];
+
           return (
-            <div key={categoria.id}>
+            <div key={categoria.titulo}>
               <BannerMain videoTitle={bannerVideo?.titulo} url={bannerVideo?.url} />
               <Carousel
                 ignoreFirstVideo
-                category={categorias[indice]}
-                categoryVideos={videos.filter(
-                  (video) => video.categoriaId === categorias[indice].id
-                )}
+                category={categorias[categoriaRef]}
+                categoryVideos={videosPrimeiraCategoria}
               />
             </div>
           );
         }
 
         return (
-          <div key={categorias[indice].id}>
+          <div key={categorias[categoriaRef]?.titulo}>
             <Carousel
-              category={categorias[indice]}
-              categoryVideos={videos.filter(
-                (video) => video.categoriaId === categorias[indice].id
+              category={categorias[categoriaRef]}
+              categoryVideos={videosPorCategoria(
+                Object.entries(videos),
+                categoriaRef,
+                categorias
               )}
             />
           </div>

@@ -1,0 +1,127 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Estudos",
+      "cor": "red",
+      "link_extra": {
+        "text": "Alura",
+        "url": "https://www.alura.com.br"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Front-End",
+      "cor": "orange"
+    },
+    {
+      "id": 3,
+      "titulo": "Back-End",
+      "cor": "yellow"
+    },
+    {
+      "id": 4,
+      "titulo": "Lives",
+      "cor": "green"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 4,
+      "titulo": "Imersão React Live #03 - Futuro do Front-end e Análise dos Projetos",
+      "url": "https://www.youtube.com/watch?v=ol_2pmyPzvI"
+    },
+    {
+      "id": 2,
+      "categoriaId": 4,
+      "titulo": "Imersão GameDev Live #2",
+      "url": "https://www.youtube.com/watch?v=vmN3lBVhu74"
+    },
+    {
+      "id": 3,
+      "categoriaId": 3,
+      "titulo": "Curso de Python 3 - Mundo 1: Fundamentos",
+      "url": "http://youtube.com/watch?v=Mp0vhMDI7fA&list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "3 LIVROS PARA COMEÇAR A PROGRAMAR DO ZERO! (COM BÔNUS)",
+      "url": "https://www.youtube.com/watch?v=Kmo_Vi3RHko"
+    },
+
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Como organizar um cronograma de estudos de programação com Notion? - Root #19",
+      "url": "https://www.youtube.com/watch?v=DemagUML778"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+      "url": "https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLTcmLKdIkOWmeNferJ292VYKBXydGeDej"
+    },
+    {
+      "id": 7,
+      "categoriaId": 2,
+      "titulo": "TUDO que você precisa saber do Next 13 (isso muda tudo)",
+      "url": "https://www.youtube.com/watch?v=0zl72thBKzo"
+    },
+    {
+      "id": 8,
+      "categoriaId": 2,
+      "titulo": "Desvendando Next.js do ZERO (SSG, SSR, ISR e mais) - Decode #013",
+      "url": "https://www.youtube.com/watch?v=2LS6rP3ykJk"
+    },
+    {
+      "id": 9,
+      "categoriaId": 4,
+      "titulo": "Curso de Engenharia da Computação | #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=b4P0g7crNTY"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "NextJS: Blog com Markdown, criando um leitor de posts do ZERO!!!",
+      "url": "https://youtu.be/n5hnE1yPde0?list=PLTcmLKdIkOWkVld6KvLJbUCPIOjqLg9cr"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "Qual a diferença entre forEach e map? #DicasDeJavaScript",
+      "url": "https://youtu.be/JbzcLKiTThk?list=PLTcmLKdIkOWnbTJorbNw0YaTQlBugNaSY"
+    },
+    {
+      "id": 12,
+      "categoriaId": 1,
+      "titulo": "Esqueça o \"Create React App\"! Crie Projetos React Assim...",
+      "url": "https://www.youtube.com/watch?v=yx6bt-LSKq8"
+    },
+    {
+      "id": 13,
+      "categoriaId": 1,
+      "titulo": "Entenda as diferenças de Git, GitHub e GitLab",
+      "url": "https://www.youtube.com/watch?v=_i9DUJcn-mU"
+    },
+    {
+      "id": 14,
+      "categoriaId": 1,
+      "titulo": "Os 3 Livros Que Fizeram Eu Não Desistir da Programação (e o que aprendi com eles)",
+      "url": "https://www.youtube.com/watch?v=Uh0Kn2aXEqY"
+    },
+    {
+      "id": 15,
+      "categoriaId": 2,
+      "titulo": "Guia de carreira Front-end | #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=fpth65ts3cw"
+    },
+    {
+      "id": 16,
+      "categoriaId": 2,
+      "titulo": "Guia de carreira React JS | #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=0tS4lUq_7iA"
+    }
+  ]
+}
