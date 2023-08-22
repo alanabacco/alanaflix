@@ -25,7 +25,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Styled Components](https://styled-components.com/)
 - [json-server](https://www.npmjs.com/package/json-server)
 - [Visual Studio Code](https://code.visualstudio.com/)
-
 - [Firebase](https://firebase.google.com/) - base de dados
 
 ## 🔥 Como executar o projeto localmente
